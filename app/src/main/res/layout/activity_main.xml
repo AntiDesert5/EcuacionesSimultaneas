@@ -42,14 +42,16 @@
             android:layout_below="@id/spinner"
             android:layout_centerInParent="true">
             <EditText
-                android:inputType="number"
+                android:inputType="numberSigned"
+                android:maxLength="8"
                 android:id="@+id/valorx1"
                 android:layout_width="@dimen/varx.tam.sizex"
                 android:layout_height="@dimen/varx.tam.sizey"
                 android:textSize="12sp"
                 android:hint="@string/valor_x1text"/>
             <EditText
-                android:inputType="numberDecimal"
+                android:maxLength="8"
+                android:inputType="numberSigned"
                 android:layout_toRightOf="@+id/valorx1"
                 android:id="@+id/valorx2"
                 android:layout_width="@dimen/varx.tam.sizex"
@@ -57,7 +59,8 @@
                 android:textSize="12sp"
                 android:hint="@string/valor_x2text"/>
             <EditText
-                android:inputType="numberDecimal"
+                android:maxLength="8"
+                android:inputType="numberSigned"
                 android:layout_toRightOf="@+id/valorx2"
                 android:id="@+id/valorx3"
                 android:layout_width="@dimen/varx.tam.sizex"
@@ -65,8 +68,9 @@
                 android:textSize="12sp"
                 android:hint="@string/valor_x3text" />
             <EditText
+                android:maxLength="8"
                 android:id="@+id/tx1"
-                android:inputType="numberDecimal"
+                android:inputType="numberSigned"
                 android:gravity="center"
                 android:layout_width="@dimen/varx.tam.sizex"
                 android:layout_height="@dimen/varx.tam.sizey"
@@ -81,7 +85,8 @@
             android:layout_below="@id/layoutprinc"
             android:layout_centerInParent="true">
             <EditText
-                android:inputType="numberDecimal"
+                android:maxLength="8"
+                android:inputType="numberSigned"
                 android:id="@+id/valorx1_1"
                 android:layout_gravity="center"
                 android:layout_width="@dimen/varx.tam.sizex"
@@ -89,21 +94,24 @@
                 android:textSize="12sp"
                 android:hint="@string/valor_x1text"/>
             <EditText
-                android:inputType="numberDecimal"
+                android:maxLength="8"
+                android:inputType="numberSigned"
                 android:id="@+id/valorx2_1"
                 android:layout_width="@dimen/varx.tam.sizex"
                 android:layout_height="@dimen/varx.tam.sizey"
                 android:textSize="12sp"
                 android:hint="@string/valor_x2text"/>
             <EditText
-                android:inputType="numberDecimal"
+                android:maxLength="8"
+                android:inputType="numberSigned"
                 android:id="@+id/valorx3_1"
                 android:layout_width="@dimen/varx.tam.sizex"
                 android:layout_height="@dimen/varx.tam.sizey"
                 android:textSize="12sp"
                 android:hint="@string/valor_x3text"/>
             <EditText
-                android:inputType="numberDecimal"
+                android:maxLength="8"
+                android:inputType="numberSigned"
                 android:id="@+id/tx2"
                 android:gravity="center"
                 android:layout_width="@dimen/varx.tam.sizex"
@@ -120,28 +128,32 @@
             android:layout_below="@+id/layoutsecond"
             android:layout_centerInParent="true">
             <EditText
-                android:inputType="numberDecimal"
+                android:maxLength="8"
+                android:inputType="numberSigned"
                 android:id="@+id/valorx1_2"
                 android:layout_width="@dimen/varx.tam.sizex"
                 android:layout_height="@dimen/varx.tam.sizey"
                 android:textSize="12sp"
                 android:hint="@string/valor_x1text"/>
             <EditText
-                android:inputType="numberDecimal"
+                android:maxLength="8"
+                android:inputType="numberSigned"
                 android:id="@+id/valorx2_2"
                 android:layout_width="60dp"
                 android:layout_height="40dp"
                 android:textSize="12sp"
                 android:hint="@string/valor_x2text"/>
             <EditText
-                android:inputType="numberDecimal"
+                android:maxLength="8"
+                android:inputType="numberSigned"
                 android:id="@+id/valorx3_2"
                 android:layout_width="60dp"
                 android:layout_height="40dp"
                 android:textSize="12sp"
                 android:hint="@string/valor_x3text"/>
             <EditText
-                android:inputType="numberDecimal"
+                android:maxLength="8"
+                android:inputType="numberSigned"
                 android:id="@+id/tx3"
                 android:gravity="center"
                 android:layout_width="@dimen/varx.tam.sizex"
@@ -165,6 +177,7 @@
             android:textSize="18sp"
             android:text="@string/Res"/>
         <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
