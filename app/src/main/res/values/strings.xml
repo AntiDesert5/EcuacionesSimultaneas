@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Ecuaciones Simultaneas</string>
+    <string name="Titulo">Ecuaciones Simultaneas</string>
+    <string name="valor_x1text">Valor x1</string>
+    <string name="valor_x2text">Valor x2</string>
+    <string name="valor_x3text">Valor x3</string>
+    <string name="Texto_1">Seleccione el nivel de matriz a realizar :</string>
+    <string name="Info">Autor: Axel Valenzuela Juárez</string>
+    <string name="Res">Resultado</string>
+    <string name="Total">Total</string>
+</resources>
