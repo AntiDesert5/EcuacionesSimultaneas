@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    android:id="@+id/padre"
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context="com.example.axelyray.ecuacionessimultaneas.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/padre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:id="@+id/Texto1"
@@ -37,10 +41,10 @@
 
         <LinearLayout
             android:id="@+id/layoutprinc"
-            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/spinner"
-            android:layout_centerInParent="true">
+            android:layout_below="@id/spinner">
             <EditText
                 android:inputType="numberSigned"
                 android:maxLength="8"
@@ -80,10 +84,10 @@
 
         <LinearLayout
             android:id="@+id/layoutsecond"
-            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/layoutprinc"
-            android:layout_centerInParent="true">
+            android:layout_below="@id/layoutprinc">
             <EditText
                 android:maxLength="8"
                 android:inputType="numberSigned"
@@ -123,10 +127,10 @@
 
         <LinearLayout
             android:id="@+id/layouttree"
-            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/layoutsecond"
-            android:layout_centerInParent="true">
+            android:layout_below="@+id/layoutsecond">
             <EditText
                 android:maxLength="8"
                 android:inputType="numberSigned"
@@ -164,11 +168,11 @@
 
     <LinearLayout
         android:id="@+id/Resultado"
+        android:gravity="center"
         android:orientation="vertical"
         android:layout_below="@id/layouttree"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
         <Button
             android:id="@+id/resultadotext"
             android:layout_width="wrap_content"
@@ -201,6 +205,21 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_margin="12sp"/>
+            <TextView
+                android:id="@+id/TotalEcu1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="12sp" />
+            <TextView
+                android:id="@+id/TotalEcu2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="12sp"/>
+            <TextView
+                android:id="@+id/TotalEcu3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="12sp"/>
             </LinearLayout>
 
     </LinearLayout>
@@ -218,4 +237,5 @@
             android:text="@string/Info"
             android:gravity="center"/>
     </LinearLayout>
-</RelativeLayout>
+    </RelativeLayout>
+</ScrollView>
